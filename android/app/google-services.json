@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1086142003069",
+    "project_id": "remsdb-37d57",
+    "storage_bucket": "remsdb-37d57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086142003069:android:426148fe8f515f832e3e14",
+        "android_client_info": {
+          "package_name": "com.example.rems"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxnYwPAbvLDc7LgiO8SRsfqqEa-KmfLhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
