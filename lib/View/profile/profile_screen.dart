@@ -217,29 +217,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             fontWeight: FontWeight.normal,
                             color: const Color.fromARGB(255, 0, 0, 0)),
                       ),
-                      FutureBuilder<String>(
-                        future: profileData,
-                        builder: (context, snapshot) {
-                          if (snapshot.connectionState ==
-                              ConnectionState.waiting) {
-                            // While data is being fetched, you can show a loading indicator or a placeholder
-                            return CircularProgressIndicator();
-                          } else if (snapshot.hasError) {
-                            // If an error occurs during data retrieval, handle it here
-                            return Text('Error: ${snapshot.error}');
-                          } else {
-                            // If data is successfully retrieved, update the Text widget
-                            return Text(
-                              'Profile Data: ${snapshot.data}',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
-                                color: Colors.black,
-                              ),
-                            );
-                          }
-                        },
-                      ),
+                      // FutureBuilder<String>(
+                      //   future: profileData,
+                      //   builder: (context, snapshot) {
+                      //     if (snapshot.connectionState ==
+                      //         ConnectionState.waiting) {
+                      //       // While data is being fetched, you can show a loading indicator or a placeholder
+                      //       return CircularProgressIndicator();
+                      //     } else if (snapshot.hasError) {
+                      //       // If an error occurs during data retrieval, handle it here
+                      //       return Text('Error: ${snapshot.error}');
+                      //     } else {
+                      //       // If data is successfully retrieved, update the Text widget
+                      //       return Text(
+                      //         'Profile Data: ${snapshot.data}',
+                      //         style: TextStyle(
+                      //           fontSize: 16,
+                      //           fontWeight: FontWeight.normal,
+                      //           color: Colors.black,
+                      //         ),
+                      //       );
+                      //     }
+                      //   },
+                      // ),
                       SizedBox(
                         height: 10,
                       ),

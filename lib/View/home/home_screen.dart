@@ -152,43 +152,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     physics: const ClampingScrollPhysics(),
                     // padding: EdgeInsets.zero,
                     children: [
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      CustomDropdown.search(
-                        hintText: 'เลือก',
-                        hintStyle: TextStyle(
-                            color: AppTheme.isLightTheme == false
-                                ? const Color(0xffF4F4F4)
-                                : const Color(0xff353045),
-                            fontSize: 16),
-                        items: const [
-                          'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
-                          'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
-                          'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
-                        ],
-                        controller: selectStatusCtrl,
-                        fillColor: AppTheme.isLightTheme == false
-                            ? const Color(0xff353045)
-                            : const Color(0xffF4F4F4),
-                        selectedStyle: TextStyle(
-                            color: AppTheme.isLightTheme == false
-                                ? const Color(0xffF4F4F4)
-                                : const Color(0xff353045),
-                            fontSize: 16),
-                        listItemStyle: TextStyle(
-                            color: AppTheme.isLightTheme == false
-                                ? const Color(0xff353045)
-                                : const Color(0xff353045),
-                            fontSize: 16),
-                        excludeSelected: false,
-                      ),
-                      const SizedBox(height: 15),
+                      
                       Row(
                         children: [
                           Expanded(
                             child: CustomDropdown.search(
-                              hintText: 'เลือก',
+                              hintText: 'ชื่องาน',
                               hintStyle: TextStyle(
                                   color: AppTheme.isLightTheme == false
                                       ? const Color(0xffF4F4F4)
@@ -219,7 +188,73 @@ class _HomeScreenState extends State<HomeScreen> {
                           Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
                           Expanded(
                             child: CustomDropdown.search(
-                              hintText: 'เลือก',
+                              hintText: 'ระยะทาง',
+                              hintStyle: TextStyle(
+                                  color: AppTheme.isLightTheme == false
+                                      ? const Color(0xffF4F4F4)
+                                      : const Color(0xff353045),
+                                  fontSize: 16),
+                              items: const [
+                                'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
+                                'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
+                                'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
+                              ],
+                              controller: selectStatusCtrl,
+                              fillColor: AppTheme.isLightTheme == false
+                                  ? const Color(0xff353045)
+                                  : const Color(0xffF4F4F4),
+                              selectedStyle: TextStyle(
+                                  color: AppTheme.isLightTheme == false
+                                      ? const Color(0xffF4F4F4)
+                                      : const Color(0xff353045),
+                                  fontSize: 16),
+                              listItemStyle: TextStyle(
+                                  color: AppTheme.isLightTheme == false
+                                      ? const Color(0xff353045)
+                                      : const Color(0xff353045),
+                                  fontSize: 16),
+                              excludeSelected: false,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: CustomDropdown.search(
+                              hintText: 'วันที่',
+                              hintStyle: TextStyle(
+                                  color: AppTheme.isLightTheme == false
+                                      ? const Color(0xffF4F4F4)
+                                      : const Color(0xff353045),
+                                  fontSize: 16),
+                              items: const [
+                                'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
+                                'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
+                                'มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี',
+                              ],
+                              controller: selectStatusCtrl,
+                              fillColor: AppTheme.isLightTheme == false
+                                  ? const Color(0xff353045)
+                                  : const Color(0xffF4F4F4),
+                              selectedStyle: TextStyle(
+                                  color: AppTheme.isLightTheme == false
+                                      ? const Color(0xffF4F4F4)
+                                      : const Color(0xff353045),
+                                  fontSize: 16),
+                              listItemStyle: TextStyle(
+                                  color: AppTheme.isLightTheme == false
+                                      ? const Color(0xff353045)
+                                      : const Color(0xff353045),
+                                  fontSize: 16),
+                              excludeSelected: false,
+                            ),
+                          ),
+                          Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
+                          Expanded(
+                            child: CustomDropdown.search(
+                              hintText: 'จังหวัด',
                               hintStyle: TextStyle(
                                   color: AppTheme.isLightTheme == false
                                       ? const Color(0xffF4F4F4)
@@ -391,7 +426,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               const SizedBox(height: 5),
                               Text(
-                                "ประเภทงาน",
+                                "ระยะทาง",
                                 // listRequest[index].subject.toString() == ""
                                 //     ? "-"
                                 //     : listRequest[index].subject.toString(),

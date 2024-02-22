@@ -239,7 +239,7 @@ class _RunningScreenState extends State<RunningScreen> {
                             children: [
                               const SizedBox(height: 5),
                               Text(
-                                "ประเภทงาน",
+                                "ระยะทาง",
                                 // listRequest[index].subject.toString() == ""
                                 //     ? "-"
                                 //     : listRequest[index].subject.toString(),
@@ -703,7 +703,7 @@ class _RunningScreenState extends State<RunningScreen> {
                             children: [
                               const SizedBox(height: 5),
                               Text(
-                                "ประเภทงาน",
+                                "ระยะทาง",
                                 // listRequest[index].subject.toString() == ""
                                 //     ? "-"
                                 //     : listRequest[index].subject.toString(),
@@ -1106,7 +1106,7 @@ class _RunningScreenState extends State<RunningScreen> {
                                                             0.08,
                                                     color: HexColor('#1DBF73'),
                                                   ),
-                                                  const SizedBox(height: 3),
+                                                  const SizedBox(height: 2),
                                                   const Text(
                                                     "รูปภาพ",
                                                     style: TextStyle(

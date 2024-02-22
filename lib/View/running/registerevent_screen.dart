@@ -3014,7 +3014,7 @@ class _RegisterEventScreenState extends State<RegisterEventScreen> {
                     Expanded(
                       flex: 0,
                       child: Image.asset(
-                        "assets/images/person1.webp",
+                        "assets/images/T-shirt-3km.jpg",
                         width: MediaQuery.of(context).size.width * 0.5,
                       ),
                     )
